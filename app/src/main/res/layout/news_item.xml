@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_border"
+    android:padding="@dimen/news_item_padding"
+    android:layout_marginVertical="@dimen/news_item_margin"
+    android:layout_marginHorizontal="@dimen/news_item_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/new_item"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/new_image_cons">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/new_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/new_image_cons"
+        android:layout_width="match_parent"
+        android:id="@+id/text_area"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/new_title"
+        android:layout_width="match_parent"
+        android:text="TİTLE"
+        android:textSize="@dimen/news_title_font_size"
+        android:layout_marginVertical="@dimen/news_item_margin"
+        android:layout_marginHorizontal="@dimen/news_item_margin"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/new_content"
+        android:layout_below="@id/new_title"
+        android:layout_marginVertical="@dimen/news_content_vertical_margin"
+        android:layout_marginHorizontal="@dimen/news_item_margin"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/news_content_font_size"
+        android:text="Content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    </RelativeLayout>
+        <ImageView
+            android:layout_width="@dimen/fav_button_size"
+            android:layout_height="@dimen/fav_button_size"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            app:tint="@color/red"
+            android:id="@+id/fav_button"
+            />
+    </RelativeLayout>
+</RelativeLayout>

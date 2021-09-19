@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="progress_bar_width">123.2dp</dimen>
+    <dimen name="news_item_margin">53.2dp</dimen>
+    <dimen name="news_item_padding">5dp</dimen>
+    <dimen name="news_content_vertical_margin">26.6dp</dimen>
+    <dimen name="fav_button_size">106.6dp</dimen>
+    <dimen name="news_image_size">666.6dp</dimen>
+    <dimen name="news_title_font_size">80sp</dimen>
+    <dimen name="news_content_font_size">54sp</dimen>
+</resources>
